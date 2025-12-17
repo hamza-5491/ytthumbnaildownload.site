@@ -1,19 +1,24 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Free YouTube Thumbnail Downloader — Download HD Thumbnails | ytthumbnaildownload.site</title>
-  <meta name="description" content="Free YouTube Thumbnail Downloader — download YouTube thumbnail HD, extract thumbnail URL, maxresdefault downloader. Paste any YouTube URL or ID and the download starts instantly. No login.">
-  <meta name="keywords" content="youtube thumbnail downloader, download youtube thumbnail, download youtube thumbnail hd, youtube thumbnail extractor, get youtube thumbnail url, maxresdefault download, yt thumbnail download">
+  <meta name="description"
+    content="Free YouTube Thumbnail Downloader — download YouTube thumbnail HD, extract thumbnail URL, maxresdefault downloader. Paste any YouTube URL or ID and the download starts instantly. No login.">
+  <meta name="keywords"
+    content="youtube thumbnail downloader, download youtube thumbnail, download youtube thumbnail hd, youtube thumbnail extractor, get youtube thumbnail url, maxresdefault download, yt thumbnail download">
   <link rel="canonical" href="https://ytthumbnaildownload.site/">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="Free YouTube Thumbnail Downloader — Download HD Thumbnails">
-  <meta property="og:description" content="Paste a YouTube URL or ID and download HD thumbnails instantly. Fast, privacy-first, one-click download.">
+  <meta property="og:description"
+    content="Paste a YouTube URL or ID and download HD thumbnails instantly. Fast, privacy-first, one-click download.">
   <meta property="og:image" content="https://ytthumbnaildownload.site/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
   <meta name="google-site-verification" content="wC5WnC10MM0gy3nQ-DxrnEOPLHKORy4Mrk-ijaxLry4" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -39,84 +44,189 @@
     ]
   }
   </script>
-  <style>
-    :root{--text:#0b1220;--muted:#6b7280;--accent:#0b84ff}
-    body{margin:0;font-family:Inter,system-ui, -apple-system, 'Segoe UI', Roboto, Arial;background:#ffffff;color:var(--text);line-height:1.6}
-    .wrap{max-width:980px;margin:28px auto;padding:28px;background:#fff;border-radius:8px;box-shadow:0 6px 22px rgba(2,6,23,0.04);border:1px solid #eef2f7}
-    header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    h1{font-size:26px;margin:0}
-    p.lead{color:#374151;margin-top:6px}
-    .tool{margin-top:18px}
-    input[type=text]{width:100%;padding:14px;border-radius:8px;border:1px solid #e5e7eb;background:#fff;color:var(--text);font-size:15px}
-    .controls{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-    .btn{padding:12px 16px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
-    .result{margin-top:18px;padding:14px;border-radius:8px;background:#f9fafb;border:1px solid #eef2f7}
-    img.thumb{max-width:100%;border-radius:6px;display:block;border:1px solid #e6eef8;margin-top:10px}
-    footer{margin-top:20px;padding-top:12px;border-top:1px solid #f3f4f6;font-size:13px;color:var(--muted)}
-    details{margin-top:12px}
-    .meta{font-size:13px;color:var(--muted)}
-    .kw{background:#f1f5f9;padding:6px 8px;border-radius:6px;margin-right:6px;font-size:13px;color:#0b1220;display:inline-block}
-    @media(max-width:600px){.wrap{margin:12px;padding:18px}h1{font-size:20px}}
-  </style>
+
 </head>
+
 <body>
-  <main class="wrap">
-    <header>
-      <div style="flex:1">
-        <h1>Free YouTube Thumbnail Downloader</h1>
-        <div class="meta">Download HD thumbnails instantly — no login, privacy-first, one-click download.</div>
-      </div>
-      <nav aria-label="main nav" style="white-space:nowrap">
-        <a class="meta" href="#how" style="margin-right:10px">How</a>
-        <a class="meta" href="#faq" style="margin-right:10px">FAQ</a>
-        <a class="meta" href="privacy.html">Privacy</a>
-      </nav>
+  <main class="bg-gradient-to-b from-black via-zinc-900 to-black text-zinc-100 px-4 md:px-20 py-10 min-h-screen">
+
+    <!-- ================= HERO ================= -->
+    <header class="text-center max-w-3xl mx-auto mb-12">
+      <h1
+        class="text-3xl md:text-4xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400">
+        Free YouTube Thumbnail Downloader
+      </h1>
+      <p class="mt-4 text-zinc-300 text-lg">
+        Download YouTube video thumbnails in HD & Full HD instantly.
+        Fast, free, secure and works directly in your browser.
+      </p>
     </header>
 
-    <p class="lead">Paste any YouTube video URL or the 11-character video ID below and click <strong>Download Thumbnail</strong>. The tool will attempt the highest quality thumbnail (maxresdefault) and fall back automatically if necessary. The download starts directly on this page — no popups, no new tabs.</p>
+    <!-- ================= TOOL ================= -->
+    <section id="tool"
+      class="max-w-4xl mx-auto bg-zinc-900/70 backdrop-blur rounded-2xl border border-zinc-800 shadow-xl p-6 md:p-8">
+      <h2 class="text-xl font-semibold mb-2">Download YouTube Thumbnail Instantly</h2>
+      <p class="text-sm text-zinc-400 mb-4">
+        Paste any YouTube video URL or the 11-character video ID below. The highest quality thumbnail
+        will be downloaded automatically.
+      </p>
 
-    <section class="tool" aria-labelledby="tool-title">
-      <label for="urlInput" class="sr-only">YouTube URL or ID</label>
-      <input id="urlInput" type="text" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ or dQw4w9WgXcQ" aria-label="YouTube URL or ID">
-      <div class="controls">
-        <button id="downloadBtn" class="btn">Download Thumbnail</button>
-      </div>
+      <input id="urlInput" type="text" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        class="w-full px-4 py-3 rounded-xl bg-black border border-zinc-700 focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/40 outline-none transition" />
 
-      <div id="result" class="result" style="display:none" aria-live="polite">
-        <div id="thumbContainer"></div>
-        <div id="links" style="margin-top:10px"></div>
-      </div>
-    </section>
+      <button id="downloadBtn"
+        class="mt-4 w-full py-3 rounded-xl font-bold bg-gradient-to-r from-indigo-500 to-cyan-500 hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+        Download Thumbnail
+      </button>
 
-    <section id="how" style="margin-top:18px">
-      <h2>How it works</h2>
-      <p>This downloader uses YouTube's public thumbnail URL pattern: <code>https://img.youtube.com/vi/VIDEO_ID/SIZE.jpg</code>. Our client-side logic tries <code>maxresdefault.jpg</code> first; if unavailable it falls back to <code>sddefault.jpg</code>, <code>hqdefault.jpg</code>, <code>mqdefault.jpg</code>, and finally <code>default.jpg</code>. Because the tool runs in the browser, your input is not sent to any server.</p>
-    </section>
-
-    <section id="content" style="margin-top:18px">
-      <h2>About this tool — semantic content & keyword clusters</h2>
-      <p>We designed this page with SEO in mind. The content targets keyword clusters related to <strong>youtube thumbnail downloader</strong> such as <em>download youtube thumbnail hd</em>, <em>get youtube thumbnail url</em>, and <em>maxresdefault download</em>. Including clear headings, FAQ schema, and semantic phrases helps search engines understand intent and boosts chances of ranking for multiple related queries.</p>
-      <p>Creators, editors, and social managers use thumbnails for cross-platform promotion — downloading the original thumbnail saves time and preserves image quality for reuse (with permission).</p>
-      <div style="margin-top:12px">
-        <span class="kw">youtube thumbnail downloader</span>
-        <span class="kw">download youtube thumbnail hd</span>
-        <span class="kw">get youtube thumbnail url</span>
-        <span class="kw">maxresdefault download</span>
+      <div id="result" class="hidden mt-6" aria-live="polite">
+        <div id="thumbContainer" class="mb-3"></div>
+        <div id="links" class="text-sm text-zinc-400"></div>
       </div>
     </section>
 
-    <section id="faq" style="margin-top:18px">
-      <h2>FAQ</h2>
-      <details><summary>Can I download any YouTube thumbnail?</summary><p>Yes — the tool fetches publicly available thumbnails. If the uploader didn't provide a high-res thumbnail, the tool returns the best available fallback.</p></details>
-      <details><summary>Is this legal?</summary><p>Thumbnails are publicly hosted by YouTube. Use thumbnails responsibly and follow copyright rules. For commercial use, obtain permission from the content owner.</p></details>
-      <details><summary>Do you store my links?</summary><p>No. All processing happens on your device — we do not log URLs.</p></details>
+    <!-- ================= GUIDE ================= -->
+    <section class="max-w-3xl mx-auto mt-16">
+      <h2 class="text-2xl font-bold mb-4">How to Download a YouTube Thumbnail</h2>
+      <ol class="space-y-2 list-decimal list-inside text-zinc-300">
+        <li>Open the YouTube video.</li>
+        <li>Copy the video URL.</li>
+        <li>Paste it into the input box above.</li>
+        <li>Click <strong>Download Thumbnail</strong>.</li>
+        <li>The thumbnail downloads automatically.</li>
+      </ol>
     </section>
 
-    <footer>
-      <div>© <span id="year"></span> ytthumbnaildownload.site • <a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a></div>
-      <div class="meta">Optimized for fast indexing, semantic search, and mobile-first performance.</div>
+    <!-- ================= FEATURES ================= -->
+    <section class="max-w-4xl mx-auto mt-16 grid md:grid-cols-2 gap-6">
+
+      <div class="bg-zinc-900/60 border border-zinc-800 rounded-xl p-6 hover:border-cyan-400 transition">
+        <h3 class="font-semibold mb-2">Download YouTube Thumbnails in HD & 4K</h3>
+        <p class="text-zinc-400">
+          Easily download YouTube thumbnail images in HD, Full HD, and 4K quality.
+          Our YouTube thumbnail downloader extracts the highest resolution thumbnail available.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900/60 border border-zinc-800 rounded-xl p-6 hover:border-cyan-400 transition">
+        <h3 class="font-semibold mb-2">Free YouTube Thumbnail Downloader</h3>
+        <p class="text-zinc-400">
+          This free YouTube thumbnail grabber works online with no signup required.
+          Get thumbnail from YouTube videos instantly without limits.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900/60 border border-zinc-800 rounded-xl p-6 hover:border-cyan-400 transition">
+        <h3 class="font-semibold mb-2">Mobile & Desktop Friendly Thumbnail Grabber</h3>
+        <p class="text-zinc-400">
+          Download YouTube video thumbnails on mobile, tablet, or PC.
+          This thumbnail grabber YouTube tool works smoothly on all devices.
+        </p>
+      </div>
+
+      <div class="bg-zinc-900/60 border border-zinc-800 rounded-xl p-6 hover:border-cyan-400 transition">
+        <h3 class="font-semibold mb-2">Privacy-Focused YouTube Thumbnail Extractor</h3>
+        <p class="text-zinc-400">
+          Your YouTube links are never stored.
+          This YouTube thumbnail extractor runs fully in your browser for safe and private downloads.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" class="max-w-3xl mx-auto mt-20">
+      <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+
+      <div class="space-y-4">
+
+        <details class="group bg-zinc-900/60 border border-zinc-800 rounded-xl p-4 transition">
+          <summary class="cursor-pointer font-medium flex justify-between items-center">
+            Is this YouTube thumbnail downloader free?
+            <span class="transition group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-3 text-zinc-400">
+            Yes, this is a completely free YouTube thumbnail downloader. You can download YouTube thumbnails
+            online without registration, payment, or installing any app. Our tool works directly in your browser
+            and supports downloading YouTube video thumbnails in HD, Full HD, and even 4K when available.
+            Unlike many thumbnail grabber websites, this tool has no usage limits and works on desktop and mobile.
+          </p>
+        </details>
+
+        <details class="group bg-zinc-900/60 border border-zinc-800 rounded-xl p-4 transition">
+          <summary class="cursor-pointer font-medium flex justify-between items-center">
+            Can I download HD or 4K YouTube thumbnails?
+            <span class="transition group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-3 text-zinc-400">
+            Yes. This YouTube thumbnail downloader automatically fetches the highest resolution available for
+            each video. It first attempts to download the YouTube thumbnail in Full HD (1920×1080) or 4K.
+            If the video does not have a high-resolution thumbnail, the tool falls back to HD or standard sizes.
+            This makes it ideal for creators who want high-quality YouTube thumbnail images for analysis,
+            inspiration, or reuse with permission.
+          </p>
+        </details>
+
+        <details class="group bg-zinc-900/60 border border-zinc-800 rounded-xl p-4 transition">
+          <summary class="cursor-pointer font-medium flex justify-between items-center">
+            Is it legal to download YouTube thumbnails?
+            <span class="transition group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-3 text-zinc-400">
+            Downloading YouTube thumbnails is generally legal because thumbnails are publicly accessible images.
+            However, the copyright belongs to the original video creator. You may download thumbnails for
+            personal use, research, design inspiration, or educational purposes. If you plan to reuse a YouTube
+            thumbnail commercially, you should always obtain permission from the content owner to avoid
+            copyright issues.
+          </p>
+        </details>
+
+        <details class="group bg-zinc-900/60 border border-zinc-800 rounded-xl p-4 transition">
+          <summary class="cursor-pointer font-medium flex justify-between items-center">
+            Does this YouTube thumbnail downloader work on mobile?
+            <span class="transition group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-3 text-zinc-400">
+            Yes, this tool is fully mobile responsive and works on Android, iPhone, tablets, and desktops.
+            You can download YouTube thumbnails directly from your mobile browser without installing any app.
+            This makes it one of the best online YouTube thumbnail downloaders for users who want quick access
+            on the go.
+          </p>
+        </details>
+
+        <details class="group bg-zinc-900/60 border border-zinc-800 rounded-xl p-4 transition">
+          <summary class="cursor-pointer font-medium flex justify-between items-center">
+            How do I download a YouTube thumbnail?
+            <span class="transition group-open:rotate-180">▼</span>
+          </summary>
+          <p class="mt-3 text-zinc-400">
+            To download a YouTube thumbnail, copy the video URL or video ID and paste it into the input box above.
+            Click the download button, and the tool will instantly extract the thumbnail image from the YouTube
+            video. The thumbnail will be downloaded automatically in the best available quality without opening
+            any new tabs or redirecting you to other websites.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="text-center mt-20 text-zinc-500 text-sm flex justify-between">
+      <p>© <span id="year"></span> ytthumbnaildownload.site</p>
+      <div class="mt-2 space-x-3">
+        <a href="/privacy.html" class="hover:text-cyan-400">Privacy</a>
+        <a href="/terms.html" class="hover:text-cyan-400">Terms</a>
+      </div>
     </footer>
+
   </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -126,29 +236,29 @@
     const thumbContainer = document.getElementById('thumbContainer');
     const links = document.getElementById('links');
 
-    function extractId(text){
-      if(!text) return '';
+    function extractId(text) {
+      if (!text) return '';
       text = text.trim();
-      try{ const u = new URL(text); if(u.searchParams.get('v')) return u.searchParams.get('v'); }catch(e){}
+      try { const u = new URL(text); if (u.searchParams.get('v')) return u.searchParams.get('v'); } catch (e) { }
       const short = text.match(/youtu\.be\/([-_0-9A-Za-z]{5,})/);
-      if(short) return short[1];
+      if (short) return short[1];
       const idMatch = text.match(/[-_0-9A-Za-z]{11}/);
-      return idMatch? idMatch[0] : '';
+      return idMatch ? idMatch[0] : '';
     }
 
-    async function tryFetch(url){
-      try{
-        const res = await fetch(url, {mode:'cors'});
-        if(!res.ok) return null;
+    async function tryFetch(url) {
+      try {
+        const res = await fetch(url, { mode: 'cors' });
+        if (!res.ok) return null;
         const blob = await res.blob();
-        if(!blob.type.startsWith('image')) return null;
+        if (!blob.type.startsWith('image')) return null;
         return blob;
-      }catch(e){
+      } catch (e) {
         return null;
       }
     }
 
-    async function downloadBlob(blob, filename){
+    async function downloadBlob(blob, filename) {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -159,18 +269,18 @@
       URL.revokeObjectURL(url);
     }
 
-    downloadBtn.addEventListener('click', async ()=>{
+    downloadBtn.addEventListener('click', async () => {
       const id = extractId(input.value);
-      thumbContainer.innerHTML=''; links.innerHTML=''; result.style.display='block';
-      if(!id){ thumbContainer.innerHTML = '<div class="meta" style="color:#dc2626">Invalid URL or Video ID. Example: dQw4w9WgXcQ</div>'; return; }
+      thumbContainer.innerHTML = ''; links.innerHTML = ''; result.style.display = 'block';
+      if (!id) { thumbContainer.innerHTML = '<div class="meta" style="color:#dc2626">Invalid URL or Video ID. Example: dQw4w9WgXcQ</div>'; return; }
       thumbContainer.innerHTML = '<div class="meta">Searching for best thumbnail...</div>';
-      const sizes = ['maxresdefault','sddefault','hqdefault','mqdefault','default'];
-      for(const s of sizes){
+      const sizes = ['maxresdefault', 'sddefault', 'hqdefault', 'mqdefault', 'default'];
+      for (const s of sizes) {
         const url = `https://img.youtube.com/vi/${id}/${s}.jpg`;
         const blob = await tryFetch(url);
-        if(blob){
+        if (blob) {
           thumbContainer.innerHTML = '';
-          const img = document.createElement('img'); img.src = url; img.className='thumb'; img.alt='thumbnail preview'; thumbContainer.appendChild(img);
+          const img = document.createElement('img'); img.src = url; img.className = 'thumb'; img.alt = 'thumbnail preview'; thumbContainer.appendChild(img);
           links.innerHTML = `<div style="margin-top:8px"><strong>Found:</strong> ${s} — <span class="meta">${url}</span></div>`;
           const filename = `${id}_${s}.jpg`;
           await downloadBlob(blob, filename);
@@ -181,4 +291,5 @@
     });
   </script>
 </body>
+
 </html>
